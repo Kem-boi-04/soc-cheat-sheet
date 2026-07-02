@@ -1,0 +1,25 @@
+# Windows Security Event Log Samples
+# These are text descriptions since .evtx is binary format
+
+Event 4624 (Successful Logon)
+- Account: CORP\jane
+- Logon Type: 10 (Remote)
+- Workstation: 41.80.5.10 (Jumpbox-01)
+- Time: 2026-05-25 08:15:22
+
+Event 4625 (Failed Logon)
+- Account: CORP\john
+- Logon Type: 10 (Remote)
+- Workstation: 197.248.1.5 (Unknown)
+- Time: 2026-05-25 08:30:15
+- Count: 5 attempts in 2 minutes
+
+Event 4672 (Special Privileges Assigned)
+- Account: CORP\IT_Admin
+- Time: 2026-05-25 10:00:00 (Patch Tuesday)
+
+Event 4740 (Account Lockout)
+- Account: CORP\jane
+- Workstation: 197.248.1.5
+- Time: 2026-05-25 08:35:00
+- Count: 4 lockouts in 10 min (Password spray detected)
